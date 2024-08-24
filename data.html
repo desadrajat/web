@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desa Drajat</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Banner -->
+    <section class="banner"></section>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="foto/logo.jpg" alt="Logo Desa Drajat" />
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="struktur.html">Struktur Organisasi</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="berita.html">Berita</a></li>
+          </ul>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- JavaScript untuk tombol hamburger -->
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.querySelector("nav").classList.toggle("active");
+        });
+    </script>
+
+    <!-- Data Laporan -->
+    <section class="data">
+      <div class="container">
+        <h5><strong>Data Laporan</strong></h5>
+        <center>
+          <img src="foto/sds.PNG" alt="Data Laporan Desa Drajat" />
+        </center>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Footer Logo and Map -->
+          <div class="footer-logo">
+            <img src="foto/Peta.png" alt="Peta Desa Drajat" width="200px" />
+          </div>
+          <!-- Footer Links -->
+          <div class="footer-links">
+            <a
+              href="https://www.instagram.com/desadrajat?igsh=cGlseHNjZDlpbzVk"
+              target="_blank"
+            >
+              <img src="foto/ig.jpeg" alt="Instagram" width="30px" />
+            </a>
+            <a href="mailto:desadrajat01@gmail.com">
+              <img src="foto/gmail.jpg" alt="Email" width="40px" />
+            </a>
+          </div>
+          <!-- Footer Text -->
+          <div class="footer-text">
+            <p>Desa Drajat, Kecamatan Paciran, Kabupaten Lamongan</p>
+            <p>Jalan Sunan Drajat RT 01 RW 03 No 13, Kode Pos 62264</p>
+            <small>&copy; KKN UNISLA 2024, All Rights Reserved</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
